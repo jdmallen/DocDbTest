@@ -1,0 +1,13 @@
+﻿{
+	"version": "1.0.0-*",
+	"buildOptions": {
+		"debugType": "portable",
+		"emitEntryPoint": true
+	},
+	"dependencies": {
+		"Microsoft.Azure.DocumentDB": "1.11.3"
+	},
+	"frameworks": {
+			"net46": {}
+	}
+}

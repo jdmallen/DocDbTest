@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+	"dependencies": {
+		"Microsoft.Azure.DocumentDB.Core": "1.0.0",
+		"Microsoft.AspNetCore.Mvc": "1.0.0",
+		"System.Runtime.Extensions": "4.3.0"
+	},
+  "frameworks": {
+    "netcoreapp1.0": {
+					"dependencies": {
+						"Microsoft.NETCore.App": {
+							"type": "platform",
+							"version": "1.0.0"
+						}
+					},
+      "imports": "dnxcore50"
+    }
+  }
+}
