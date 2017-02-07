@@ -28,12 +28,14 @@ namespace NetCoreTest
 					GetResults(docQuery).Wait();
 					Console.WriteLine("done");
 					Debug.WriteLine("done");
+					Console.Read();
 				}
 			}
 			catch (Exception e)
 			{
 				Console.WriteLine(e);
 				Debug.WriteLine(e);
+				Console.Read();
 			}
 		}
 
