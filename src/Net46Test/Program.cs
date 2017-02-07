@@ -26,19 +26,23 @@ namespace Net46Test
 						"SELECT * FROM c where c.importId = \"d7968646-aec6-4687-be4f-e612cf361f76\"");
 					var docQuery = query.AsDocumentQuery();
 					GetResults(docQuery).Wait();
+					Console.WriteLine("done");
 					Debug.WriteLine("done");
 				}
 			}
 			catch (Exception e)
 			{
+				Console.WriteLine(e);
 				Debug.WriteLine(e);
 			}
 		}
-		
+
 		private static async Task GetResults(IDocumentQuery<dynamic> docQuery)
 		{
+			Console.WriteLine("getting");
 			Debug.WriteLine("getting");
 			var results = await docQuery.ExecuteNextAsync();
+			Console.WriteLine(JsonConvert.SerializeObject(results));
 			Debug.WriteLine(JsonConvert.SerializeObject(results));
 		}
 	}
